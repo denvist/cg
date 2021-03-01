@@ -1,0 +1,20 @@
+defaults:
+  - scope:
+      path: ""
+      type: jobs
+    values:
+      layout: job
+collections:
+  jobs:
+    output: true
+
+excerpt_separator: <!--more-->
+
+author: cg
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+
+sass:
+  style: compact
