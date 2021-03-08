@@ -16,7 +16,7 @@
 
 {% if page.showjobs %}
   {% if jobs | size %}
-    <h2>some jobs</h2>
+    <h2>Всего вакансий: {{ jobs | size }}</h2>
     <ul>{% for job in jobs %}
       <li>{{ job.title }} - {{ job.date}}</li>
       {% endfor %}</ul>
