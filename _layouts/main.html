@@ -2,9 +2,17 @@
 {% assign count = jobs | size %}
 {% assign vars = site.data.vars %}
 
+{% assign textclass = "text-dark" %}
+{% assign bgclass = "bg-gray" %}
+
+{% if page.invert %}
+    {% assign textclass = "text-light" %}
+    {% assign bgclass = "bg-dark" %}
+{% endif %}
+
 {% include header.html %}
 
-<div class="hero bg-gray">
+<div class="hero bg-gray hero-lg text-center {{textclass}} {{bgclass}} ">
   <div class="hero-body">
     <h1>{{ page.header }}</h1>
     <p>{{ page.subheader }}</p>
