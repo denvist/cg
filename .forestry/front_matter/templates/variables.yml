@@ -46,3 +46,5 @@ fields:
   label: Отображать вакансии
   description: Скрыть/показать список вакансий
   default: true
+pages:
+- _data/vars.yml

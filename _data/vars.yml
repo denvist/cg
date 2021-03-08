@@ -11,5 +11,5 @@ links:
   url: https://t.me/hokkusan
 - name: youtube
   url: https://youtube.com
-showjobs: false
-shownavbar: false
+showjobs: true
+shownavbar: true
