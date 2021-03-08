@@ -12,7 +12,7 @@
   </div>
 </section>
 
-{% assign jobs = site.jobs | where_exp: "job", "job.published == false" %}
+{% assign jobs = site.jobs | where: "published", true %}
 
 {% if page.showjobs %}
   {% if jobs | size  > 0 %}
