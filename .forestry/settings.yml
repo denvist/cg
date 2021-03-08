@@ -7,7 +7,6 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
-  exclude: README.md
 - type: directory
   path: _jobs
   label: Jobs
@@ -17,9 +16,8 @@ sections:
   path: _data/vars.yml
   label: Variables
 - type: document
-  label: Help
   path: README.md
-  read_only: false
+  label: Help
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''

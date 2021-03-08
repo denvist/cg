@@ -1,5 +1,5 @@
 ---
-title: "{{ site.data.vars.header }}"
+title: Главная
 layout: main
 showjobs: false
 
