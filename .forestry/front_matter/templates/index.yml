@@ -20,3 +20,5 @@ fields:
   name: invert
   label: Инверсный цвет
   description: Использовать инверсные цвета
+pages:
+- index.md
