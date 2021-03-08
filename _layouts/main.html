@@ -14,7 +14,7 @@
 
 {% assign jobs = site.jobs | where: "published", true %}
 {% assign count = jobs | size %}
-{5 assign vars = site.data.vars %}
+{% assign vars = site.data.vars %}
 
 {% if vars.showjobs %}
   {% if jobs.size > 0 %}
