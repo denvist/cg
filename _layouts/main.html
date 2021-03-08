@@ -1,3 +1,7 @@
+{% assign jobs = site.jobs | where: "published", true %}
+{% assign count = jobs | size %}
+{% assign vars = site.data.vars %}
+
 {% include header.html %}
 
 <section class="section">
@@ -5,16 +9,13 @@
     <div class="hero-body">
       <div class="content">
         <div class="text-center">
-          {{ content }}
+          <h1>{{ page.header }}</h1>
+          <h6 class="font-alt font-light">{{ page.subheader }}</h6>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-{% assign jobs = site.jobs | where: "published", true %}
-{% assign count = jobs | size %}
-{% assign vars = site.data.vars %}
 
 {% if vars.showjobs %}
   {% if jobs.size > 0 %}
