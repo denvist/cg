@@ -1,4 +1,10 @@
 ---
 label: Variables
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Название сайта
+  default: Computer Graphics
