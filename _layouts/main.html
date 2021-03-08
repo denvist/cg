@@ -12,11 +12,33 @@
   </div>
 </section>
 
+{% assign jobs = site.jobs | where_exp: "job", "job.active == true" %}
+
 {% if page.showjobs %}
-  <h2>some jobs</h2>
-  <ul>{% for job in site.jobs %}
-    <li>{{ job.title }} - {{ job.date}}</li>
-    {% endfor %}</ul>
+  {% if jobs | size %}
+    <h2>some jobs</h2>
+    <ul>{% for job in jobs %}
+      <li>{{ job.title }} - {{ job.date}}</li>
+      {% endfor %}</ul>
+  {% else %}
+    <div class="placeholder">
+      <div class="placeholder-icon">
+        <span class="icon">
+          <i class="fa fa-wrapper fa-coffee x-large"></i>
+        </span>
+      </div>
+      <h6 class="placeholder-title">В данный момент все трудоустроены.</h6>
+      <div class="placeholder-subtitle">Возвращайтесь позже или бросьте мне письмо.</div>
+      <div class="placeholder-commands u-center">
+        <div class="btn-container">
+          <button class="btn-primary">Refresh</button>
+        </div>
+        <div class="btn-container">
+        <button>Home</button>
+        </div>
+      </div>
+    </div>
+  {% endif %}
 {% endif %}
 
 {% include footer.html %}
