@@ -18,6 +18,7 @@ sections:
 - type: document
   path: README.md
   label: Help
+  read_only: true
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
