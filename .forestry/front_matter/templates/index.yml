@@ -1,0 +1,22 @@
+---
+label: Index
+hide_body: true
+fields:
+- type: boolean
+  name: showcover
+  label: showcover
+- type: file
+  name: cover
+  label: cover
+- type: boolean
+  name: invert
+  label: invert
+- type: text
+  name: header
+  label: header
+- type: text
+  name: subheader
+  label: subheader
+- type: text
+  name: layout
+  label: layout
