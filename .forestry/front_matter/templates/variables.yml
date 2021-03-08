@@ -8,3 +8,41 @@ fields:
     required: false
   label: Название сайта
   default: Computer Graphics
+- name: shownavbar
+  type: boolean
+  label: Отображать меню
+  description: Скрыть/показать верхнее меню
+  default: true
+- name: header
+  type: text
+  config:
+    required: false
+  label: Заголовок
+  default: Найду. Подберу. Предложу.
+  description: Приветственный заголовок
+- name: subheader
+  type: text
+  config:
+    required: false
+  label: Подзаголовок
+  description: Приветственный подзаголовок
+  default: Интересные вакансии из мира Computer Graphics
+- name: nojobheader
+  type: text
+  config:
+    required: false
+  description: Заголовок про отсутствие вакансий
+  label: Заголовок "нет вакансий"
+  default: В данный момент все трудоустроены
+- name: nojobsubheader
+  type: text
+  config:
+    required: false
+  label: Подзаголовок "нет вакансий"
+  default: Возвращайтесь позже или бросьте мне письмо
+  description: Подзаголовок про отсутствие вакансий
+- name: showjobs
+  type: boolean
+  label: Отображать вакансии
+  description: Скрыть/показать список вакансий
+  default: true
