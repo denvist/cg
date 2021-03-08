@@ -4,6 +4,6 @@ layout: main
 showjobs: true
 
 ---
-# Найду. Подберу. Предложу
+# {{ site.data.vars.header }}
 
-## Интересные вакансии из мира Computer Graphics
+## {{ site.data.vars.subheader }}
