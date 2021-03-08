@@ -1,9 +1,8 @@
 ---
-title: Главная
-layout: main
 cover: "/uploads/cover.png"
+invert: true
+header: "Найду. Подберу. Предложу."
+subheader: "Интересные вакансии из мира Computer Graphics"
+layout: jobs
 
 ---
-# {{ site.data.vars.header }}
-
-## {{ site.data.vars.subheader }}
