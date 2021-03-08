@@ -7,14 +7,18 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
-- type: document
-  path: _data/vars.yaml
-  label: Variables
 - type: directory
   path: _jobs
   label: Jobs
   create: all
   match: "**/*"
+- type: document
+  path: _data/vars.yaml
+  label: Variables
+- type: document
+  label: Help
+  path: README.md
+  read_only: true
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
