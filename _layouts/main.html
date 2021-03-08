@@ -15,9 +15,9 @@
 {% assign jobs = site.jobs | where_exp: "job", "job.published == false" %}
 
 {% if page.showjobs %}
-  {% if jobs | size  > 0 %}
-    <h2>Всего вакансий: {{ jobs | size }}</h2>
-    <ul>{% for job in jobs %}
+  {% if site.jobs | size  > 0 %}
+    <h2>Всего вакансий: {{ site.jobs | size }}</h2>
+    <ul>{% for job in site.jobs %}
       <li>{{ job.title }} - {{ job.date}}</li>
       {% endfor %}</ul>
   {% else %}
