@@ -1,7 +1,9 @@
 ---
-title: Главная
+title: Вакансии из мира Computer Graphics
 layout: main
 showjobs: true
 
 ---
-Найду, подберу и предложу вам интересную позицию в Computer Graphics.
+# Найду. Подберу. Предложу
+
+## Интересные вакансии из мира Computer Graphics
