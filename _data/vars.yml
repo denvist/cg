@@ -5,6 +5,8 @@ subheader: Интересные вакансии из мира Computer Graphics
 nojobheader: В данный момент все трудоустроены
 nojobsubheader: Возвращайтесь позже или бросьте мне письмо
 links:
+- name: вап
+  url: вапапвп
 - name: telegram
   url: https://t.me/hokkusan
 - name: youtube
