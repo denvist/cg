@@ -7,10 +7,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cirrus-ui@0.6.1/dist/cirrus.min.css">
   </head>
   <body>
+    {% if site.data.vars.shownavbar %}
     <div class="header header-fixed unselectabled header-animated">
       <div class="header-brand">
         <div class="nav-item no-hover">
           <h6 class="title">{{site.title}}</h6>
         </div>
       </div>
-    </div>
+    </div>{% endif %}
