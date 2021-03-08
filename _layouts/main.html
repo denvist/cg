@@ -1,5 +1,17 @@
 {% include header.html %}
 
+<section class="section">
+  <div class="hero fullscreen">
+    <div class="hero-body">
+      <div class="content">
+        <div class="text-center">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% if page.showjobs %}
   <h2>some jobs</h2>
   <ul>{% for job in site.jobs %}
