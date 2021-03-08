@@ -14,8 +14,9 @@
 
 {% assign jobs = site.jobs | where: "published", true %}
 {% assign count = jobs | size %}
+{5 assign vars = site.data.vars %}
 
-{% if page.showjobs %}
+{% if vars.showjobs %}
   {% if jobs.size > 0 %}
     <h2>Всего вакансий: {{ jobs.size }}</h2>
     {% for job in jobs %}
@@ -49,8 +50,8 @@
           <i class="fa fa-wrapper fa-coffee x-large"></i>
         </span>
       </div>
-      <h6 class="placeholder-title">{{ site.data.vars.nojobheader}}</h6>
-      <div class="placeholder-subtitle">{{ site.data.vars.nojobsubheader}}</div>
+      <h6 class="placeholder-title">{{ vars.nojobheader}}</h6>
+      <div class="placeholder-subtitle">{{ vars.nojobsubheader}}</div>
     </div>
 
 {% include footer.html %}
