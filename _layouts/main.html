@@ -4,55 +4,19 @@
 
 {% include header.html %}
 
-<section class="section">
-  <div class="hero fullscreen">
-    <div class="hero-body">
-      <div class="content">
-        <div class="text-center">
-          <h1>{{ page.header }}</h1>
-          <h6 class="font-light">{{ page.subheader }}</h6>
-        </div>
-      </div>
-    </div>
+<div class="hero bg-gray">
+  <div class="hero-body">
+    <h1>{{ page.header }}</h1>
+    <p>{{ page.subheader }}</p>
   </div>
-</section>
+</div>
 
 {% if vars.showjobs %}
   {% if jobs.size > 0 %}
-    <h2>Всего вакансий: {{ jobs.size }}</h2>
-    {% for job in jobs %}
-      <div class="card slide-up">
-        <div class="card-container">
-          <div class="card-image" style="background-image: url(https://unsplash.it/640/480?random&blur)"></div>
-        </div>
-        <div class="mobile-title">
-          <div class="content">
-            <div class="tile">
-              <div class="tile__container">
-                <p class="tile__title">{{ job.title }}</p>
-                <p class="tile__subtitle">By John Doe</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-body content">
-          <p>{{ job.content }}</p>
-        </div>
-        <div class="card-footer content">
-          {{ job.date }}
-        </div>
-      </div>
+    <h2>Всего вакансий: {{ jobs.size }}</h2>{% for job in jobs %}
+      {% include_relative job.html job %}
     {% endfor %}
   {% endif %}
 {% endif %}
-    <div class="placeholder">
-      <div class="placeholder-icon">
-        <span class="icon">
-          <i class="fa fa-wrapper fa-coffee x-large"></i>
-        </span>
-      </div>
-      <h6 class="placeholder-title">{{ vars.nojobheader}}</h6>
-      <div class="placeholder-subtitle">{{ vars.nojobsubheader}}</div>
-    </div>
 
 {% include footer.html %}
