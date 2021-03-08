@@ -1,0 +1,3 @@
+body {
+  background-image: repeating-linear-gradient(157.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(67.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(143,33%,50%),hsl(215,33%,50%),hsl(287,33%,50%),hsl(359,33%,50%),hsl(71,33%,50%));
+}
