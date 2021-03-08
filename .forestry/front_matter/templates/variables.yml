@@ -46,5 +46,9 @@ fields:
   label: Отображать меню
   description: Скрыть/показать верхнее меню
   default: true
+- name: links
+  type: field_group
+  config: {}
+  label: Ссылки
 pages:
 - _data/vars.yml
