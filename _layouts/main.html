@@ -41,7 +41,8 @@
         </div>
       </div>
     {% endfor %}
-  {% else %}
+  {% endif %}
+{% endif %}
     <div class="placeholder">
       <div class="placeholder-icon">
         <span class="icon">
@@ -51,7 +52,5 @@
       <h6 class="placeholder-title">{{ site.data.vars.nojobheader}}</h6>
       <div class="placeholder-subtitle">{{ site.data.vars.nojobsubheader}}</div>
     </div>
-  {% endif %}
-{% endif %}
 
 {% include footer.html %}
