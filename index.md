@@ -1,7 +1,7 @@
 ---
 title: Вакансии из мира Computer Graphics
 layout: main
-showjobs: true
+showjobs: false
 
 ---
 # {{ site.data.vars.header }}
