@@ -4,11 +4,7 @@ defaults:
       type: jobs
     values:
       layout: job
-  - scope:
-      type: document
-      path: "_data/vars.yml"
-      label: Vars
-      
+
 collections:
   jobs:
     output: true
