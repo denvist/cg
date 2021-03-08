@@ -2,21 +2,21 @@
 label: Index
 hide_body: true
 fields:
-- type: boolean
-  name: showcover
-  label: showcover
-- type: file
-  name: cover
-  label: cover
-- type: boolean
-  name: invert
-  label: invert
 - type: text
   name: header
-  label: header
+  label: Слоган
 - type: text
   name: subheader
-  label: subheader
-- type: text
-  name: layout
-  label: layout
+  label: Описание
+- type: file
+  name: cover
+  label: Обложка
+  description: Фоновая обложка
+- type: boolean
+  name: showcover
+  label: Показать обложку
+  description: Скрыть/показать обложку
+- type: boolean
+  name: invert
+  label: Инверсный цвет
+  description: Использовать инверсные цвета
