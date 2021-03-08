@@ -12,10 +12,10 @@
   </div>
 </section>
 
-{% assign jobs = site.jobs | where_exp: "job", "job.active == true" %}
+{% assign jobs = site.jobs | where_exp: "job", "job.published == true" %}
 
 {% if page.showjobs %}
-  {% if jobs | size %}
+  {% if jobs | size  > 0 %}
     <h2>Всего вакансий: {{ jobs | size }}</h2>
     <ul>{% for job in jobs %}
       <li>{{ job.title }} - {{ job.date}}</li>
