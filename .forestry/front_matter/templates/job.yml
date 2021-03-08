@@ -14,3 +14,5 @@ fields:
   type: boolean
   label: Published
   description: Статус публикации вакансии
+pages:
+- _jobs/ведущий-аниматор.md
