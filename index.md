@@ -2,6 +2,6 @@
 title: Главная
 layout: main
 showjobs: true
----
 
-Главная
+---
+Найду, подберу и предложу вам интересную позицию в Computer Graphics.
