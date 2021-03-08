@@ -8,3 +8,5 @@ fields:
     maxSize: 64
   label: Обложка
   default: "/uploads/cover.png"
+pages:
+- index.md
