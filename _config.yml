@@ -10,6 +10,7 @@ collections:
 
 excerpt_separator: <!--more-->
 
+title: "cg.jobs"
 author: cg
 
 plugins:
