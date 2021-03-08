@@ -4,15 +4,34 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: Title
-  description: Названии вакансии
+  label: Название вакансии
+  description: Краткое название вакансии
+  config:
+    required: true
 - type: datetime
   name: date
-  label: Date
-  description: Дата публикации вакансии
+  label: Дата
+  description: Дата вакансии
+  config:
+    required: true
+- name: type
+  type: select
+  default: cg
+  config:
+    required: true
+    options:
+    - it
+    - cg
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Тип
+  description: Тип вакансии
 - name: published
   type: boolean
-  label: Published
+  label: Опубликовано
   description: Статус публикации вакансии
 pages:
 - _jobs/1.md
