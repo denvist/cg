@@ -15,5 +15,6 @@ fields:
   label: Published
   description: Статус публикации вакансии
 pages:
+- _jobs/1.md
 - _jobs/2.md
 - _jobs/ведущий-аниматор.md
