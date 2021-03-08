@@ -9,3 +9,4 @@ links:
   - name: "youtube"
     url: "https://youtube.com"
 showjobs: true
+shownavbar: true
