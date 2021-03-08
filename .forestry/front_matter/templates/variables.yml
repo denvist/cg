@@ -13,20 +13,6 @@ fields:
   label: Отображать вакансии
   description: Скрыть/показать список вакансий
   default: true
-- name: header
-  type: text
-  config:
-    required: false
-  label: Заголовок
-  default: Найду. Подберу. Предложу.
-  description: Приветственный заголовок
-- name: subheader
-  type: text
-  config:
-    required: false
-  label: Подзаголовок
-  description: Приветственный подзаголовок
-  default: Интересные вакансии из мира Computer Graphics
 - name: nojobheader
   type: text
   config:
