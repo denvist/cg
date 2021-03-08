@@ -14,7 +14,7 @@
 {% if vars.showjobs %}
   {% if jobs.size > 0 %}
     <h2>Всего вакансий: {{ jobs.size }}</h2>{% for job in jobs %}
-      {% include job.html job %}
+      {% include job.html job=job %}
     {% endfor %}
   {% endif %}
 {% endif %}
