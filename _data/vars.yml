@@ -1,12 +1,13 @@
-title: "Computer Graphics"
-header: "Найду. Подберу. Предложу."
-subheader: "Интересные вакансии из мира Computer Graphics"
-nojobheader: "В данный момент все трудоустроены"
-nojobsubheader: "Возвращайтесь позже или бросьте мне письмо"
+---
+title: Computer Graphics
+header: Найду. Подберу. Предложу.
+subheader: Интересные вакансии из мира Computer Graphics
+nojobheader: В данный момент все трудоустроены
+nojobsubheader: Возвращайтесь позже или бросьте мне письмо
 links:
-  - name: "telegram"
-    url: "https://t.me/hokkusan"
-  - name: "youtube"
-    url: "https://youtube.com"
+- name: telegram
+  url: https://t.me/hokkusan
+- name: youtube
+  url: https://youtube.com
 showjobs: true
-shownavbar: true
+shownavbar: false
