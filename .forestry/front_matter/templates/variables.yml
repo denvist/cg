@@ -8,10 +8,10 @@ fields:
     required: false
   label: Название сайта
   default: Computer Graphics
-- name: shownavbar
+- name: showjobs
   type: boolean
-  label: Отображать меню
-  description: Скрыть/показать верхнее меню
+  label: Отображать вакансии
+  description: Скрыть/показать список вакансий
   default: true
 - name: header
   type: text
@@ -41,10 +41,10 @@ fields:
   label: Подзаголовок "нет вакансий"
   default: Возвращайтесь позже или бросьте мне письмо
   description: Подзаголовок про отсутствие вакансий
-- name: showjobs
+- name: shownavbar
   type: boolean
-  label: Отображать вакансии
-  description: Скрыть/показать список вакансий
+  label: Отображать меню
+  description: Скрыть/показать верхнее меню
   default: true
 pages:
 - _data/vars.yml
