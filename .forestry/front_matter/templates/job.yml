@@ -9,7 +9,7 @@ fields:
 - type: datetime
   name: date
   label: Date
-  description: Дату публикации вакансии
+  description: Дата публикации вакансии
 - name: published
   type: boolean
   label: Published
