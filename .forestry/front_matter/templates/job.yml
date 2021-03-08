@@ -8,6 +8,7 @@ fields:
 - type: datetime
   name: date
   label: date
-- type: boolean
-  name: active
-  label: active
+- name: published
+  type: boolean
+  label: Published
+  description: Статус публикации вакансии
