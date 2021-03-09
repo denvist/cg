@@ -2,17 +2,23 @@
 label: Variables
 hide_body: true
 fields:
-- name: title
-  type: text
-  config:
-    required: false
-  label: Название сайта
-  default: Computer Graphics
-- name: showjobs
-  type: boolean
-  label: Отображать вакансии
-  description: Скрыть/показать список вакансий
-  default: true
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Название сайта
+  - name: showjobs
+    type: boolean
+    label: Отображать вакансии
+    default: true
+  - name: shownavbar
+    type: boolean
+    label: Отображать меню
+  label: Шапка
 - name: nojobheader
   type: text
   config:
@@ -27,14 +33,28 @@ fields:
   label: Подзаголовок "нет вакансий"
   default: Возвращайтесь позже или бросьте мне письмо
   description: Подзаголовок про отсутствие вакансий
-- name: shownavbar
-  type: boolean
-  label: Отображать меню
-  description: Скрыть/показать верхнее меню
-  default: true
+- name: footer
+  type: field_group
+  config: {}
+  label: Подвал
 - name: links
   type: field_group
   config: {}
   label: Ссылки
+- name: theme
+  type: field_group
+  config: {}
+  fields:
+  - name: fontname
+    type: text
+    config:
+      required: false
+    label: Наименование шрифта
+  - name: fonturl
+    type: text
+    config:
+      required: false
+    label: Ссылка на шрифт
+  label: Тема
 pages:
 - _data/vars.yml
