@@ -1,4 +1,4 @@
-{% assign theme = site.data.vars.theme %}
+{% assign vars = site.data.vars %}
 
 <!doctype html>
 <html>
@@ -7,25 +7,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-    {% if theme.fonturl != "" and theme.fontname != "" %}
-    <link href="{{ theme.fonturl }}" rel="stylesheet">
+    {% if vars.theme.fonturl != "" and vars.theme.fontname != "" %}
+    <link href="{{ vars.theme.fonturl }}" rel="stylesheet">
     <style>
       body {
-        font-family: {{ theme.fontname }} !important;
+        font-family: {{ vars.theme.fontname }} !important;
       }
     </style>
     {% endif %}
   </head>
   <body>
-    {% if site.data.vars.shownavbar %}
+    {% if vars.header.shownavbar %}
     <header class="navbar">
       <section class="navbar-section">
         <a href="#" class="btn btn-link">Docs</a>
         <a href="#" class="btn btn-link">Examples</a>
       </section>
       <section class="navbar-center">
-      <!--     <span>{{ site.data.vars.title }}</span> -->
-        <img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg">
+        <span>{{ vars.header.title }}</span>
+<!--         <img src="https://picturepan2.github.io/spectre/img/spectre-logo.svg"> -->
       </section>
       <section class="navbar-section">
         <a href="#" class="btn btn-link">Twitter</a>
