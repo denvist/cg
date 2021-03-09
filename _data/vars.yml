@@ -11,5 +11,13 @@ links:
   url: https://youtube.com
 showjobs: true
 shownavbar: false
-fonturl: "https://fonts.googleapis.com/css?family=Montserrat:400,700"
-fontname: "Montserrat"
+fonturl: https://fonts.googleapis.com/css?family=Montserrat:400,700
+fontname: Montserrat
+header:
+  title: IT & Computer Graphic Jobs
+  showjobs: true
+  shownavbar: true
+footer: {}
+theme:
+  fontname: ''
+  fonturl: ''
