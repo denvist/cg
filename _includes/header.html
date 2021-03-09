@@ -11,8 +11,8 @@
     {% if vars.theme.fonturl != "" and vars.theme.fontname != "" %}
     <link href="{{ vars.theme.fonturl }}" rel="stylesheet">
     <style>
-      body {
-        font-family: {{ vars.theme.fontname }} !important;
+      :root {
+        font-family: {{ vars.theme.fontname }};
       }
     </style>
     {% endif %}
