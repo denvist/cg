@@ -37,29 +37,6 @@ fields:
   type: field_group
   config: {}
   label: Подвал
-- name: links
-  type: field_group
-  config: {}
-  label: Ссылки
-  fields:
-  - name: links
-    type: field_group_list
-    fields:
-    - name: name
-      type: text
-      config:
-        required: false
-      label: name
-    - name: url
-      type: text
-      config:
-        required: false
-      label: url
-    config:
-      min: 
-      max: 
-      labelField: 
-    label: Ссылки
 - name: theme
   type: field_group
   config: {}
@@ -84,5 +61,23 @@ fields:
     schema:
       format: markdown
   label: description
+- name: links
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: name
+  - name: url
+    type: text
+    config:
+      required: true
+    label: url
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: links
 pages:
 - _data/vars.yml
