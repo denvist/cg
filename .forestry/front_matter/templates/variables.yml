@@ -52,15 +52,6 @@ fields:
       required: false
     label: Ссылка на шрифт
   label: Тема
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: description
 - name: links
   type: field_group_list
   fields:
