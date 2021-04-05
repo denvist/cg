@@ -3,10 +3,10 @@ title: IT & Computer Graphics
 nojobheader: В данный момент все трудоустроены
 nojobsubheader: Возвращайтесь позже или бросьте мне письмо
 links:
-- name: telegram
-  url: https://t.me/hokkusan
 - name: youtube
   url: https://youtube.com
+- name: telegram
+  url: https://t.me/hokkusan
 showjobs: true
 shownavbar: false
 fonturl: https://fonts.googleapis.com/css?family=Montserrat:400,700
