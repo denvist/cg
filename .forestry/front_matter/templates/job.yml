@@ -33,6 +33,24 @@ fields:
   type: boolean
   label: Опубликовано
   description: Статус публикации вакансии
+- name: list
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: name
+  - name: position
+    type: text
+    config:
+      required: false
+    label: position
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: list
 pages:
 - _jobs/1.md
 - _jobs/2.md
